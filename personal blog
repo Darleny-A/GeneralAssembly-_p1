@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url(https://i.imgur.com/NpUx7ho.jpg);
+      background-size: contain;
+      color: white; 
+      padding: 50px 0px 60px 0px;
+    } 
+
+    a {
+      color: #FFF;
+    }
+    h1 {
+      font-size: 70px;
+      color: #FFF;
+      
+    }
+    /*img {*/
+    /*  margin: 40px 0px 0px 0px;*/
+    /*  border: 7px solid white;*/
+    /*  border-radius: 20px;*/
+    /*}*/
+    
+    article {
+      max-width: 500px;
+      padding: 10px;
+      margin: 20 100;
+    }
+    
+    p {
+      line-height: 2;
+      font-family: times;
+      font-size: 20px;
+    }
+    footer{
+     text-align: center;
+    padding: 5px;
+    background-color: #BA5A31;
+    color: white; 
+    }
+.sidenav {
+  height: 100%;
+  width: 170px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #E59F71;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 20px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #BA5A31;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #69DC9E;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 35px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+      p {
+       margin: 0px -90px 0px  
+      }
+      
+      h2{
+       margin-left:-90px  
+      }
+        .sidenav {
+          padding-top: 15px;
+          }
+  .sidenav a {
+    font-size: 18px;
+    }
+    }
+    
+  </style>
+</head>
+<body>
+<span style="font-size:30px;cursor:pointer;color:#E59F71" onclick="openNav()">&#9776; </span>
+  <header>  
+  <h1 style="background-color:69DC9E"> Sketches </h1>
+  </header>
+  <article>
+    <h2 style="color:#69DC9E">Introduction</h2>
+    <p>I take great <i>pride </i> in my sketchbook since I find it to be my safe space. There I brainstorm alot of my final pieces and even explore some meidums I am too afraid to try on a larger scale. I made this page just to showcase some of my favorite sketches from my sketchbook. <b>Enjoy!</b> </p>
+  </article>
+  
+  <article>
+    <h2 style="color:#69DC9E">Sketching process</h2>
+    <p>When sketching, I don't follow a specific idea (or "metaphor") meaning that each page of my sketchbook gives off a different message and feel. However, one thing I try to keep is consitancy. For example, I draw many of the same elements multiple times, each time with a twist of course. Next, I draw daily or as often as I can. If not then I doodle aways.&#128512;</p>
+  </article>
+  
+  <footer>
+   
+   <p> Leave a like! I apreciate the support.</p>
+   <button style="color:#69DC9E">Like</button>
+   
+   </footer>
+   
+   <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="#">About me</a>
+  <a href="#">Sketches</a>
+  <a href="#">Prints and orignals</a>
+</div>
+
+  <script>
+    $("button").on("Liked!", function() {
+      alert("Clicked!");
+    });
+    
+    function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+  </script>
+</body>
